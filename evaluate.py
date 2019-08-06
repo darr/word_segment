@@ -3,7 +3,7 @@
 #####################################
 # File name : eval.py
 # Create date : 2019-08-06 13:18
-# Modified date : 2019-08-06 16:22
+# Modified date : 2019-08-06 16:44
 # Author : DARREN
 # Describe : not set
 # Email : lzygzh@126.com
@@ -39,6 +39,6 @@ def run():
     run_eval()
     run_test()
 
-if __name__ == "__main__":
-    run_eval()
-    run_test()
+#   if __name__ == "__main__":
+#       run_eval()
+#       run_test()

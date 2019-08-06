@@ -3,7 +3,7 @@
 #####################################
 # File name : score.py
 # Create date : 2019-08-06 15:07
-# Modified date : 2019-08-06 16:11
+# Modified date : 2019-08-06 16:49
 # Author : DARREN
 # Describe : not set
 # Email : lzygzh@126.com
@@ -17,10 +17,6 @@ from methods.max_ngram import MaxProbCut
 from methods.biward_ngram import BiWardNgram
 import time
 
-hmm_cuter = HmmCut()
-maxmatch_cuter = CutWords()
-maxngram_cuter = MaxProbCut()
-biwardngram_cuter = BiWardNgram()
 
 def hmm_test(sentence):
     print("HMM Word Segment:")
@@ -63,6 +59,12 @@ def item_test(sentence):
     maxmatch_test(sentence)
 
 def get_score(testfile, mode):
+
+    hmm_cuter = HmmCut()
+    maxmatch_cuter = CutWords()
+    maxngram_cuter = MaxProbCut()
+    biwardngram_cuter = BiWardNgram()
+
     start_time = time.time()
     count = 1
     count_right = 0
